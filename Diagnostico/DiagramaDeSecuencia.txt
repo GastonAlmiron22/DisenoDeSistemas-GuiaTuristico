@@ -1,0 +1,12 @@
+Usuario -> IU: Solicitar registro de servicio
+IU -> Usuario: Mostrar formulario de registro
+Usuario -> IU: Ingresar detalles del servicio
+IU -> Controller: Validar detalles del servicio
+Controller -> IU: Mostrar confirmación de detalles
+IU -> Usuario: Mostrar confirmación de detalles
+Usuario -> IU: Confirmar y registrar servicio
+IU -> Controller: ConfirmarRegistro()
+Controller -> Base de Datos: Guardar información del servicio
+Base de Datos --> Controller: Confirmación de registro exitoso
+Controller -> IU: Conformacion del registro
+IU ->Usuario: Ok
